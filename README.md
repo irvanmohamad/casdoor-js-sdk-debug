@@ -1,21 +1,21 @@
-# casdoor-js-sdk
+# casdoor-js-sdk-debug
 
 [![NPM version][npm-image]][npm-url]
 [![NPM download][download-image]][download-url]
-[![codebeat badge](https://codebeat.co/badges/6f2ad052-7fc8-42e1-b40f-0ca2648530c2)](https://codebeat.co/projects/github-com-casdoor-casdoor-js-sdk-master)
-[![GitHub Actions](https://github.com/casdoor/casdoor-js-sdk/actions/workflows/release.yml/badge.svg)](https://github.com/casdoor/casdoor-js-sdk/actions/workflows/release.yml)
-[![GitHub Actions](https://github.com/casdoor/casdoor-js-sdk/actions/workflows/build.yml/badge.svg)](https://github.com/casdoor/casdoor-js-sdk/actions/workflows/build.yml)
-[![Coverage Status](https://codecov.io/gh/casdoor/casdoor-js-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/casdoor/casdoor-js-sdk)
-[![Release](https://img.shields.io/github/release/casdoor/casdoor-js-sdk.svg)](https://github.com/casdoor/casdoor-js-sdk/releases/latest)
+[![codebeat badge](https://codebeat.co/badges/6f2ad052-7fc8-42e1-b40f-0ca2648530c2)](https://codebeat.co/projects/github-com-casdoor-casdoor-js-sdk-debug-master)
+[![GitHub Actions](https://github.com/irvanmohamad/casdoor-js-sdk-debug/actions/workflows/release.yml/badge.svg)](https://github.com/irvanmohamad/casdoor-js-sdk-debug/actions/workflows/release.yml)
+[![GitHub Actions](https://github.com/irvanmohamad/casdoor-js-sdk-debug/actions/workflows/build.yml/badge.svg)](https://github.com/irvanmohamad/casdoor-js-sdk-debug/actions/workflows/build.yml)
+[![Coverage Status](https://codecov.io/gh/casdoor/casdoor-js-sdk-debug/branch/master/graph/badge.svg)](https://codecov.io/gh/casdoor/casdoor-js-sdk-debug)
+[![Release](https://img.shields.io/github/release/casdoor/casdoor-js-sdk-debug.svg)](https://github.com/irvanmohamad/casdoor-js-sdk-debug/releases/latest)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/casbin/casdoor)
 
-[npm-image]: https://img.shields.io/npm/v/casdoor-js-sdk.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/casdoor-js-sdk-debug.svg?style=flat-square
 
-[npm-url]: https://npmjs.com/package/casdoor-js-sdk
+[npm-url]: https://npmjs.com/package/casdoor-js-sdk-debug
 
-[download-image]: https://img.shields.io/npm/dm/casdoor-js-sdk.svg?style=flat-square
+[download-image]: https://img.shields.io/npm/dm/casdoor-js-sdk-debug.svg?style=flat-square
 
-[download-url]: https://npmjs.com/package/casdoor-js-sdk
+[download-url]: https://npmjs.com/package/casdoor-js-sdk-debug
 This is Casdoor's SDK for js will allow you to easily connect your application to the Casdoor authentication system
 without having to implement it from scratch.
 
@@ -27,10 +27,10 @@ Casdoor SDK is very simple to use. We will show you the steps below.
 
 ~~~shell script
 # NPM
-npm i casdoor-js-sdk
+npm i casdoor-js-sdk-debug
 
 # Yarn
-yarn add casdoor-js-sdk
+yarn add casdoor-js-sdk-debug
 ~~~
 
 ### Init SDK
@@ -47,7 +47,7 @@ Initialization requires 5 parameters, which are all string type:
 | signinPath     | No  | the path of the signin URL for your Casdoor application, will be `/api/signin` if not provided              |
 
 ```typescript
-import {SDK, SdkConfig} from 'casdoor-js-sdk'
+import {SDK, SdkConfig} from 'casdoor-js-sdk-debug'
 
 const sdkConfig: SdkConfig = {
     serverUrl: "https://door.casbin.com",
@@ -70,8 +70,8 @@ Initialization parameters are consistent with the previous node.js section:
 ```html
 <!--init the SDK-->
 <script type="module">
-  //Import from cdn(you can choose the appropriate cdn source according to your needs), or just from the local(download the casdoor-js-sdk first)
-  import SDK from 'https://unpkg.com/casdoor-js-sdk@latest/lib/esm/sdk.js'
+  //Import from cdn(you can choose the appropriate cdn source according to your needs), or just from the local(download the casdoor-js-sdk-debug first)
+  import SDK from 'https://unpkg.com/casdoor-js-sdk-debug@latest/lib/esm/sdk.js'
   const sdkConfig = {
     serverUrl: "https://door.casbin.com",
     clientId: "014ae4bd048734ca2dea",
@@ -163,7 +163,7 @@ Popup a window to handle the callback url from casdoor, call the back-end api to
 
 To see how to use casdoor frontend SDK with casdoor backend SDK, you can refer to examples below:
 
-[casnode](https://github.com/casbin/casnode): casdoor-js-sdk + casdoor-go-sdk
+[casnode](https://github.com/casbin/casnode): casdoor-js-sdk-debug + casdoor-go-sdk
 
 [casdoor-python-vue-sdk-example](https://github.com/casdoor/casdoor-python-vue-sdk-example): casdoor-vue-sdk + casdoor-python-sdk
 
