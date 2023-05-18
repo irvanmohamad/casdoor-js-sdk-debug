@@ -102,27 +102,30 @@ class Sdk {
 
     public async signin(serverUrl: string, signinPath?: string, code?: string, state?: string): Promise<Response> {
         console.log("js enter signin")
+
         if(!code || !state) {
             const params = new URLSearchParams(window.location.search);
             code = params.get("code")!;
             state = params.get("state")!;
             console.log("js code: " + code + ", state: " + state)
         }
-        const expectedState = this.getOrSaveState();
-        console.log(`js invalid state parameter, expected: ${expectedState}, got: ${state}`)
-        this.clearState();
-        if (state !== expectedState) {
-            console.log(`js (inside state vs expectedState comparison) invalid state parameter, expected: ${expectedState}, got: ${state}`)
-            return new Promise((resolve, reject) => {
-                setTimeout(() => {
-                    resolve({
-                        // @ts-ignore
-                        status: "error",
-                        msg: `invalid state parameter, expected: ${expectedState}, got: ${state}`,
-                    });
-                }, 10);
-            });
-        }
+
+        // const expectedState = this.getOrSaveState();
+        // console.log(`js invalid state parameter, expected: ${expectedState}, got: ${state}`)
+        // this.clearState();
+        //
+        // if (state !== expectedState) {
+        //     console.log(`js (inside state vs expectedState comparison) invalid state parameter, expected: ${expectedState}, got: ${state}`)
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             resolve({
+        //                 // @ts-ignore
+        //                 status: "error",
+        //                 msg: `invalid state parameter, expected: ${expectedState}, got: ${state}`,
+        //             });
+        //         }, 10);
+        //     });
+        // }
 
         return fetch(`${serverUrl}${signinPath || this.config.signinPath || '/api/signin'}?code=${code}&state=${state}`, {
             method: "POST",
