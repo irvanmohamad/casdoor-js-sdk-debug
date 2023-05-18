@@ -7,7 +7,7 @@ jobs:
   semantic-release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Run semantic-release
         if: github.event_name == 'push' && github.repository == 'irvanmohamad/casdoor-js-sdk-debug'
