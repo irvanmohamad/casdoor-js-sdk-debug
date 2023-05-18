@@ -101,7 +101,7 @@ class Sdk {
     }
 
     public async signin(serverUrl: string, signinPath?: string, code?: string, state?: string): Promise<Response> {
-        console.log("enter js signin")
+        console.log("js enter signin")
         if(!code || !state) {
             const params = new URLSearchParams(window.location.search);
             code = params.get("code")!;
