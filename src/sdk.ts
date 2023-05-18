@@ -101,14 +101,17 @@ class Sdk {
     }
 
     public async signin(serverUrl: string, signinPath?: string, code?: string, state?: string): Promise<Response> {
+        console.log("enter js signin")
         if(!code || !state) {
-        const params = new URLSearchParams(window.location.search);
+            const params = new URLSearchParams(window.location.search);
             code = params.get("code")!;
             state = params.get("state")!;
+            console.log("js code: " + code + ", state: " + state)
         }
         const expectedState = this.getOrSaveState();
         this.clearState();
         if (state !== expectedState) {
+            console.log("js state !== expectedState")
             return new Promise((resolve, reject) => {
                 setTimeout(() => {
                     resolve({
