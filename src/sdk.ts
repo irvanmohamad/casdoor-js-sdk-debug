@@ -109,9 +109,10 @@ class Sdk {
             console.log("js code: " + code + ", state: " + state)
         }
         const expectedState = this.getOrSaveState();
+        console.log(`js invalid state parameter, expected: ${expectedState}, got: ${state}`)
         this.clearState();
         if (state !== expectedState) {
-            console.log("js state !== expectedState")
+            console.log(`js (inside state vs expectedState comparison) invalid state parameter, expected: ${expectedState}, got: ${state}`)
             return new Promise((resolve, reject) => {
                 setTimeout(() => {
                     resolve({
