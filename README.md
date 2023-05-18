@@ -5,8 +5,8 @@
 [![codebeat badge](https://codebeat.co/badges/6f2ad052-7fc8-42e1-b40f-0ca2648530c2)](https://codebeat.co/projects/github-com-casdoor-casdoor-js-sdk-debug-master)
 [![GitHub Actions](https://github.com/irvanmohamad/casdoor-js-sdk-debug/actions/workflows/release.yml/badge.svg)](https://github.com/irvanmohamad/casdoor-js-sdk-debug/actions/workflows/release.yml)
 [![GitHub Actions](https://github.com/irvanmohamad/casdoor-js-sdk-debug/actions/workflows/build.yml/badge.svg)](https://github.com/irvanmohamad/casdoor-js-sdk-debug/actions/workflows/build.yml)
-[![Coverage Status](https://codecov.io/gh/casdoor/casdoor-js-sdk-debug/branch/master/graph/badge.svg)](https://codecov.io/gh/casdoor/casdoor-js-sdk-debug)
-[![Release](https://img.shields.io/github/release/casdoor/casdoor-js-sdk-debug.svg)](https://github.com/irvanmohamad/casdoor-js-sdk-debug/releases/latest)
+[![Coverage Status](https://codecov.io/gh/irvanmohamad/casdoor-js-sdk-debug/branch/master/graph/badge.svg)](https://codecov.io/gh/irvanmohamad/casdoor-js-sdk-debug)
+[![Release](https://img.shields.io/github/release/irvanmohamad/casdoor-js-sdk-debug.svg)](https://github.com/irvanmohamad/casdoor-js-sdk-debug/releases/latest)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/casbin/casdoor)
 
 [npm-image]: https://img.shields.io/npm/v/casdoor-js-sdk-debug.svg?style=flat-square
@@ -157,7 +157,7 @@ First, let's explain the two parameters of this method, which are the callback m
 ````typescript
 popupSignin(serverUrl, signinPath)
 ````
-Popup a window to handle the callback url from casdoor, call the back-end api to complete the login process and store the token in localstorage, then reload the main window. See Demo: [casdoor-nodejs-react-example](https://github.com/casdoor/casdoor-nodejs-react-example).
+Popup a window to handle the callback url from casdoor, call the back-end api to complete the login process and store the token in localstorage, then reload the main window. See Demo: [casdoor-nodejs-react-example](https://github.com/irvanmohamad/casdoor-nodejs-react-example).
 
 ## More examples
 
@@ -165,7 +165,7 @@ To see how to use casdoor frontend SDK with casdoor backend SDK, you can refer t
 
 [casnode](https://github.com/casbin/casnode): casdoor-js-sdk-debug + casdoor-go-sdk
 
-[casdoor-python-vue-sdk-example](https://github.com/casdoor/casdoor-python-vue-sdk-example): casdoor-vue-sdk + casdoor-python-sdk
+[casdoor-python-vue-sdk-example](https://github.com/irvanmohamad/casdoor-python-vue-sdk-example): casdoor-vue-sdk + casdoor-python-sdk
 
 
 

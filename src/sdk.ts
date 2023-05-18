@@ -21,7 +21,7 @@ export interface SdkConfig {
     signinPath?: string // the path of the signin URL for your Casdoor applcation, will be "/api/signin" if not provided
 }
 
-// reference: https://github.com/casdoor/casdoor-go-sdk/blob/90fcd5646ec63d733472c5e7ce526f3447f99f1f/auth/jwt.go#L19-L32
+// reference: https://github.com/irvanmohamad/casdoor-go-sdk/blob/90fcd5646ec63d733472c5e7ce526f3447f99f1f/auth/jwt.go#L19-L32
 export interface Account {
     organization: string,
     username: string,
@@ -124,7 +124,7 @@ class Sdk {
             method: "POST",
             credentials: "include",
         }).then((res) => {
-            console.log(res)
+            console.log("js signin res: " + res)
             return res.json()
         });
     }

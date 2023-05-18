@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run semantic-release
-        if: github.event_name == 'push' && github.repository == 'casdoor/casdoor-js-sdk-debug'
+        if: github.event_name == 'push' && github.repository == 'irvanmohamad/casdoor-js-sdk-debug'
         run: yarn install && yarn semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
